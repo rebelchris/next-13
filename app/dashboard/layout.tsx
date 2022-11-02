@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function DashboardLayout({children}: {
     children: React.ReactNode
 }) {
@@ -5,8 +7,8 @@ export default function DashboardLayout({children}: {
         <aside className='w-64 bg-cyan-100 rounded-xl m-4'>
             <nav>
                 <ul className='gap-4 flex flex-col p-4'>
-                    <li><a href='#'>Account</a></li>
-                    <li><a href='#'>Settings</a></li>
+                    <li><Link href="/dashboard/account">Account</Link></li>
+                    <li><Link href="/dashboard/settings">Settings</Link></li>
                 </ul>
             </nav>
         </aside>
